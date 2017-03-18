@@ -1,8 +1,8 @@
 {
-  "name": "Start on Heroku: Ruby",
+  "name": "rbmq",
   "description": "A barebones Rails app, which can easily be deployed to Heroku",
   "image": "heroku/ruby",
-  "repository": "https://github.com/heroku/ruby-getting-started",
+  "repository": "https://github.com/justindenick/rbmq.git",
   "keywords": ["ruby", "rails" ],
   "addons": [ "heroku-postgresql" ]
 }
