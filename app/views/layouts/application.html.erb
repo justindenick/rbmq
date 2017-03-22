@@ -8,7 +8,8 @@
   <%= javascript_include_tag  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body
+
 <nav class="navbar navbar-default navbar-static-top navbar-inverse">
   <div class="container">
     <ul class="nav navbar-nav">
@@ -43,7 +44,15 @@
   </div>
 </nav>
 
-<%= yield %>
+<% flash.each do |name, msg| -%>
+<div class="container" role="alert">
+  <%= content_tag :div, msg, class: name + ' alert alert-info text-center' %>
+</div>
+<% end -%>
+<div class="container">
 
+  <%= yield %>
+
+</div
 </body>
 </html>

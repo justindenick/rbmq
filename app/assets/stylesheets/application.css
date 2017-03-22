@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+fieldset {
+ color: ghostwhite;
+ border-radius: 6px;
+ padding: 8px;
+}
+.well {
+ background-color: rebeccapurple;
+ transition:.2s ease-in-out;
+
+}
+label {
+  font-weight:200;
+  margin: 0 0 2px 0;
+}
+.btn-primary {
+  background-color: rgb(45, 23, 68);
+  border: 1px solid #817390;
+  border-radius:5px;
+}
+.btn-primary:focused {
+  background-color: rgb(45, 23, 68);
+  opacity:.3;
+}
+.btn-primary:hover {
+  background-color: rgb(45, 23, 68);
+  opacity:.9;
+  transition:.2s ease-in-out;
+}
+input,textarea {
+  color:blueviolet;
+  border-radius:4px;
+  padding-left: 2px;
+}

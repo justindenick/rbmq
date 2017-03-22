@@ -1,8 +1,8 @@
 require "bunny"
 
-# conn = Bunny.new(:hostname => "rabbit.local")
+conn = Bunny.new(:hostname => ENV["RABBITMQ_BIGWIG_RX_URL"])
 
-conn = Bunny.new
+# conn = Bunny.new
 conn.start
 ch   = conn.create_channel
 
