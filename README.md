@@ -11,5 +11,10 @@ $ bundle install
 $ bundle exec rake db:create db:migrate
 $ heroku local
 ```
+or
+
+```sh
+$ make depends db-init run
+```
 
 Your app should now be running on [localhost:5000](http://localhost:5000/).
